@@ -1,3 +1,44 @@
+.projectSkill {
+  // margin-right: 20px;
+  margin-inline: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline;
+  width: 50px;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.skill45 {
+  @extend .projectSkill;
+  width: 45px;
+}
+
+.skill60 {
+  @extend .projectSkill;
+  width: 60px;
+}
+
+.skill70 {
+  @extend .projectSkill;
+  width: 70px;
+}
+
+.skill80 {
+  @extend .projectSkill;
+  width: 80px;
+}
+
+.skill90 {
+  @extend .projectSkill;
+  width: 90px;
+}
+
+.projectSkill:hover {
+  // transform: scale(1.1);
+  transform: translateY(-5px);
+}
+
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
