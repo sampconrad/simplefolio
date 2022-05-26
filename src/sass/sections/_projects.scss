@@ -1,9 +1,6 @@
 .projectSkill {
-  // margin-right: 20px;
-  margin-inline: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  display: inline;
+  margin: 20px;
+  // display: inline;
   width: 50px;
   height: auto;
   transition: 0.3s ease-in-out;
@@ -79,6 +76,17 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+
+      &-title2 {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        font-size: $small-font-size;
 
         @include respond(phone) {
           font-size: 2rem;
