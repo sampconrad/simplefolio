@@ -28,7 +28,7 @@
   }
 
   &__smallText {
-    font-size: .7rem;
+    font-size: 0.8rem;
   }
 
   & hr {
@@ -69,4 +69,23 @@
   &:hover {
     transform: translateY(-2px);
   }
+}
+
+/*Google logo colors*/
+.g-blue {
+  color: #4285f4;
+}
+.o-red {
+  color: #db4437;
+}
+.o-yellow {
+  color: #f4b400;
+}
+.l-green {
+  color: #0f9d58;
+}
+.g-green {
+  color: #0f9d58;
+  display: inline-block;
+  transform: rotate(-20deg);
 }

@@ -1,44 +1,8 @@
-.projectSkill {
-  margin: 20px;
-  // display: inline;
-  width: 50px;
-  height: auto;
-  transition: 0.3s ease-in-out;
-}
-
-.skill45 {
-  @extend .projectSkill;
-  width: 45px;
-}
-
-.skill60 {
-  @extend .projectSkill;
-  width: 60px;
-}
-
-.skill70 {
-  @extend .projectSkill;
-  width: 70px;
-}
-
-.skill80 {
-  @extend .projectSkill;
-  width: 80px;
-}
-
-.skill90 {
-  @extend .projectSkill;
-  width: 90px;
-}
-
-.projectSkill:hover {
-  // transform: scale(1.1);
-  transform: translateY(-5px);
-}
-
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  // background-color: $white-color;
+  background-color: $dark-grey;
+  // color: $dark-blue-text;
+  color: $white-color;
   margin-top: -10rem;
   padding-top: 15rem;
 
@@ -66,6 +30,7 @@
       text-align: left;
 
       @include respond(phone) {
+        text-align: center;
         margin-bottom: 2.5rem !important;
       }
       @include respond(tab-land) {
@@ -89,6 +54,8 @@
         font-size: $small-font-size;
 
         @include respond(phone) {
+          margin-bottom: 2rem;
+          margin-top: 4rem;
           font-size: 2rem;
         }
       }
@@ -100,6 +67,7 @@
 
     &__image {
       width: 90%;
+
       margin: 0 auto;
 
       @include respond(tab-land) {
@@ -122,6 +90,68 @@
           margin-bottom: 3.2rem;
         }
       }
+    }
+  }
+
+  // .container-skill {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    @include respond(phone) {
+      grid-template-columns: auto auto auto auto;
+    }
+    justify-content: center;
+    align-items: center;
+    // padding: 10px;
+    // margin: 10px;
+  }
+  .grid-item {
+    justify-self: center;
+  }
+  .projectSkill {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    width: auto;
+    height: 5rem;
+    margin: $default-font-size $default-font-size;
+    transition: all 0.2s ease-in;
+    &:hover {
+      transform: translateY(-2px);
+    }
+    @include respond(phone) {
+      height: 5rem;
+      margin: 1rem 2rem 1rem 2rem;
+    }
+  }
+
+  .skill-small {
+    @extend .projectSkill;
+    height: 40px;
+    @include respond(phone) {
+      height: 30px;
+    }
+  }
+
+  .skill-medium {
+    @extend .projectSkill;
+    height: 60px;
+    @include respond(phone) {
+      height: 50px;
+    }
+  }
+
+  .skill-large {
+    @extend .projectSkill;
+    height: 80px;
+    @include respond(phone) {
+      height: 4rem;
     }
   }
 }

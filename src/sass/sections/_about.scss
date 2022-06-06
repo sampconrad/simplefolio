@@ -5,7 +5,8 @@
     $primary-color 0%,
     $secondary-color 100%
   );
-  color: $white-color;
+  // color: $white-color;
+  color: $dark-grey;
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -33,7 +34,7 @@
         height: 100%;
       }
       @include respond(tab-port-sm) {
-        padding-bottom: 6.4rem;
+        padding-bottom: 3rem;
       }
     }
 

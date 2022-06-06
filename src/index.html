@@ -38,7 +38,7 @@
     ></script>
 
     <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -75,7 +75,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.png"
+                src="assets/profile2.png"
                 alt="Profile Image"
               />
             </div>
@@ -84,16 +84,7 @@
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
                 <!-- EN-US -->
-                Hey, this is me!
-                <!-- PT-BR -->
-                <!-- Olá. Me chamo Conrado, tenho 29 anos. -->
-              </p>
-              <p class="about-wrapper__info-text">
-                <!-- EN-US -->
-                After graduating from Law School in 2016 and finding myself
-                unhappy with my career trajectory at the time, I ended up
-                deciding in 2021 to dabble in web development, which to my
-                surprise, I feel in love with.
+                After graduating from Law School and finding myself unhappy with the direction my career was going, I started a web dev course on a whim and to my surprise I fell in love with it.
                 <!-- PT-BR -->
                 <!-- Após me formar em Direito em 2016 e me encontrar insatisfeito com minha carreira
                 na época, decidi em 2021 me aprofundar na programação, onde para
@@ -101,35 +92,41 @@
               </p>
               <p class="about-wrapper__info-text">
                 <!-- EN-US -->
-                Today I'm proud to say I build full-stack projects with React,
-                web servers on Node, databases with PostgreSQL, plus a variety
-                of other skills I've picked up along the way. You can see them
-                being put to action in my projects below!
+                Flash forward a year - plus a few more courses - and I'm building
+                full-stack projects with React, web servers on Node, databases
+                with PostgreSQL, plus a variety of other skills I've picked up
+                along the way. You can see them being put to action in my projects below!
                 <!-- PT-BR -->
                 <!-- Hoje me orgulho de dizer que construo projetos full-stack com
                 React, servidores web em Node, e banco de dados com PostgreSQL,
                 além de outras habilidades que acumulei no decorrer dessa
                 jornada. -->
-              </p>
-              <p class="about-wrapper__info-text">
+                </p>
+                <!-- <p class="about-wrapper__info-text"> -->
                 <!-- EN-US -->
-                I'm excited for what the future has in store for me, and I only
-                hope I can continue to learn and improve my skills with each and
-                every day.
+                <!-- Want to know more? Check out my resume too! -->
                 <!-- PT-BR -->
                 <!-- Estou animado pelo que o futuro me aguarda e espero continuar
                 expandindo meus conhecimentos a cada dia. -->
+                <!-- </p> -->
+                <span class="d-flex mt-3">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--resume"
+                    href="assets/resume.pdf"
+                  >
+                    View Resume
+                  </a>                  
+                  <a
+                    rel="noreferrer"
+                    class="cta-btn cta-btn--view-project"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
+                </span>
               </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -141,7 +138,7 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title white-color">Projects</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
@@ -152,7 +149,7 @@
                   <p class="mb-4">
                     Face recognition app with user authentication built on React
                     and Node.JS using the
-                    <a href="https://www.clarifai.com/">Clarifai</a> API.
+                    <a target="_blank" href="https://www.clarifai.com/">Clarifai API</a>.
                     Sensitive data is securely stored on a PostgreSQL database
                     with proper password hashing through Bcrypt.
                   </p>
@@ -174,40 +171,66 @@
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <!-- <h3 class="project-wrapper__text-title2">Built with:</h3> -->
-                <div style="margin-top: 30px">
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
                   <img
                     src="./assets/html.png"
                     alt="html"
                     class="projectSkill"
-                  />
-                  <img src="./assets/css.png" alt="css" class="projectSkill" />
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/js.png"
                     alt="js"
-                    class="projectSkill skill45"
-                  />
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/react.png"
                     alt="react"
-                    class="projectSkill skill45"
-                  />
-                  <img
-                    src="./assets/node2.png"
-                    alt="node"
-                    class="projectSkill skill70"
-                  />
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/postgre.png"
                     alt="postgre"
-                    class="projectSkill skill60"
-                  />
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/rest.png"
                     alt="rest"
-                    class="projectSkill skill80"
-                  />
+                    class="projectSkill skill-small"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/heroku.png"
+                    alt="heroku"
+                    class="projectSkill"
+                  /></div>
                 </div>
+                <!-- END OF SKILLS USED -->
+
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -236,14 +259,440 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Lo-Fi Player</h3>
+                <div>
+                  <p class="mb-4">
+                    Music player built on JavaScript. Songs taken from
+                    <a target="_blank" href="https://tunetank.com/genres/lo-fi-hip-hop/">Tunetank</a>. All credit to the songs goes to the original artists.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://sampconrad.github.io/lofi-player/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/sampconrad/lofi-player"
+                >
+                  Source Code
+                </a>
+                <!-- SKILLS USED -->
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
+                  <img
+                    src="./assets/html.png"
+                    alt="html"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/js.png"
+                    alt="js"
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img
+                    src="./assets/react.png"
+                    alt="react"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/postgre.png"
+                    alt="postgre"
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div> -->
+
+                  <!-- <div class="grid-item">
+                  <img
+                    src="./assets/rest.png"
+                    alt="rest"
+                    class="projectSkill skill-small"
+                  /></div> -->
+                </div>
+                <!-- END OF SKILLS USED -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/lofiplayer.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->               
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Skelly Jokester</h3>
+                <div>
+                  <p class="mb-4">
+                    An aplication that fetches programming-related jokes from the 
+                    <a target="_blank" href="https://sv443.net/jokeapi/v2/">Joke API</a> and through the Text-to-Speech functionality from <a target="_blank" href="https://www.voicerss.org/api/">RSS API</a> it voices the joke to the user all the while displayed the same joke on screen.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://sampconrad.github.io/skelly-jokester/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/sampconrad/skelly-jokester"
+                >
+                  Source Code
+                </a>
+                <!-- SKILLS USED -->
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
+                  <img
+                    src="./assets/html.png"
+                    alt="html"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/js.png"
+                    alt="js"
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img
+                    src="./assets/react.png"
+                    alt="react"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/postgre.png"
+                    alt="postgre"
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div> -->
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/rest.png"
+                    alt="rest"
+                    class="projectSkill skill-small"
+                  /></div>
+                </div>
+                <!-- END OF SKILLS USED -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/skelly.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->          
+          
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Light & Dark Mode</h3>
+                <div>
+                  <p class="mb-4">
+                    Demo of Light & Dark mode implementation where the color palette is entirely changed according to what the user selects, while their preference is saved on their local storage for future reference.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://sampconrad.github.io/light-dark-mode/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/sampconrad/light-dark-mode"
+                >
+                  Source Code
+                </a>
+                <!-- SKILLS USED -->
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
+                  <img
+                    src="./assets/html.png"
+                    alt="html"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/js.png"
+                    alt="js"
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img
+                    src="./assets/react.png"
+                    alt="react"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/postgre.png"
+                    alt="postgre"
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/rest.png"
+                    alt="rest"
+                    class="projectSkill skill-small"
+                  /></div> -->
+                </div>
+                <!-- END OF SKILLS USED -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/lightdark.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">TailwindCSS Demo</h3>
+                <div>
+                  <p class="mb-4">
+                    A demonstration of <a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a> being used alongside the <a target="_blank" href="https://michalsnik.github.io/aos/">AOS Animation Library</a> on a <a target="_blank" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation">Creative Tim template</a> in order to guide the user's experience through the page.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://sampconrad.github.io/tailwind-demo/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/sampconrad/tailwind-demo"
+                >
+                  Source Code
+                </a>
+                <!-- SKILLS USED -->
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
+                  <img
+                    src="./assets/html.png"
+                    alt="html"
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div> -->
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/js.png"
+                    alt="js"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/tailwindcss.png" 
+                  alt="tailwindcss" 
+                  class="projectSkill skill-small" 
+                  /></div>
+                  
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/aos.png" 
+                  alt="aos" 
+                  class="projectSkill" 
+                  /></div>                  
+
+                  <!-- <div class="grid-item">
+                  <img
+                    src="./assets/react.png"
+                    alt="react"
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/postgre.png"
+                    alt="postgre"
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/rest.png"
+                    alt="rest"
+                    class="projectSkill skill-small"
+                  /></div> -->
+                </div>
+                <!-- END OF SKILLS USED -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/tailwind.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->          
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Infinite Drool</h3>
                 <div>
                   <p class="mb-4">
-                    A simple page to demonstrate my implementation of seamless
-                    infinite scroll functionality akin to social media apps. The
-                    images are fetched from the
-                    <a href="https://unsplash.com/documentation">Unsplash</a>
-                    API and we're tracking the moment all the images are loaded
+                    A demo of seamless
+                    infinite scroll functionality akin to social media apps. Images are fetched from the
+                    <a href="https://unsplash.com/documentation">Unsplash API</a> and we're tracking the moment they're loaded
                     in order to dynamically hide the loading animation.
                   </p>
                 </div>
@@ -264,40 +713,58 @@
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <!-- <h3 class="project-wrapper__text-title2">Built with:</h3> -->
-                <div style="margin-top: 30px">
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
                   <img
                     src="./assets/html.png"
                     alt="html"
                     class="projectSkill"
-                  />
-                  <img src="./assets/css.png" alt="css" class="projectSkill" />
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/js.png"
                     alt="js"
-                    class="projectSkill skill45"
-                  />
-                  <!-- <img
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img
                     src="./assets/react.png"
                     alt="react"
-                    class="projectSkill skill45"
-                  />
-                  <img
-                    src="./assets/node2.png"
-                    alt="node"
-                    class="projectSkill skill70"
-                  />
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/postgre.png"
                     alt="postgre"
-                    class="projectSkill skill60"
-                  /> -->
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div> -->
+
+                  <div class="grid-item">
                   <img
                     src="./assets/rest.png"
                     alt="rest"
-                    class="projectSkill skill80"
-                  />
+                    class="projectSkill skill-small"
+                  /></div>
                 </div>
+                <!-- END OF SKILLS USED -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -322,25 +789,21 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+                    <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Quote Generator</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    An application that fetches quotes from the <a href="https://type.fit/api/quotes">Type.fit API</a>, displays a random one, and allows the user to tweet out the quote from their personal Twitter account.                    
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://sampconrad.github.io/quote-generator/"
                 >
                   See Live
                 </a>
@@ -348,45 +811,63 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/sampconrad/quote-generator"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <!-- <h3 class="project-wrapper__text-title2">Built with:</h3> -->
-                <div style="margin-top: 30px">
+                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <div class="grid-container">
+                  <div class="grid-item">
                   <img
                     src="./assets/html.png"
                     alt="html"
                     class="projectSkill"
-                  />
-                  <img src="./assets/css.png" alt="css" class="projectSkill" />
+                  /></div>
+
+                  <div class="grid-item">
+                  <img 
+                  src="./assets/css.png" 
+                  alt="css" 
+                  class="projectSkill" 
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/js.png"
                     alt="js"
-                    class="projectSkill skill45"
-                  />
-                  <!-- <img
+                    class="projectSkill"
+                  /></div>
+
+                  <!-- <div class="grid-item">
+                  <img
                     src="./assets/react.png"
                     alt="react"
-                    class="projectSkill skill45"
-                  />
-                  <img
-                    src="./assets/node2.png"
-                    alt="node"
-                    class="projectSkill skill70"
-                  />
+                    class="projectSkill"
+                  /></div>
+
+                  <div class="grid-item">
                   <img
                     src="./assets/postgre.png"
                     alt="postgre"
-                    class="projectSkill skill60"
-                  /> -->
+                    class="projectSkill skill-medium"
+                  /></div>
+
+                  <div class="grid-item">
+                  <img
+                    src="./assets/node3.jpg"
+                    alt="node"
+                    class="projectSkill skill-small"
+                  /></div> -->
+
+                  <div class="grid-item">
                   <img
                     src="./assets/rest.png"
                     alt="rest"
-                    class="projectSkill skill80"
-                  />
+                    class="projectSkill skill-small"
+                  /></div>
                 </div>
+                <!-- END OF SKILLS USED -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -402,7 +883,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/quote.png"
                     />
                   </div>
                 </a>
@@ -420,13 +901,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">Don't be a stranger!</p>
+          <p class="contact-wrapper__text">I'd love to hear from you!</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:sampconrad@gmail.com"
-            >Get in touch</a
+            >Mail me</a
           >
         </div>
       </div>
@@ -459,7 +940,17 @@
 
         <p class="footer__text">
           © 2022 - Made with 🍕 and ❤️
-          <span class="footer__smallText">and a bit of Googling.</span>
+          <span class="footer__smallText">and a bit of</span>
+          <span style="font-family: 'Product Sans',sans-serif;font-size:9px;">
+          <span class="g-blue">G</span>
+          <span class="o-red">o</span>
+          <span class="o-yellow">o</span>
+          <span class="g-blue">g</span>
+          <span class="l-green">l</span>
+          <span class="o-red">i</span>
+          <span class="g-blue">n</span>
+          <span class="g-green">g</span>
+      </span>
         </p>
       </div>
     </footer>
