@@ -31,6 +31,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+			src="https://kit.fontawesome.com/0d3faf735c.js"
+			crossorigin="anonymous"
+		></script>
     <link rel="stylesheet" href="styles.scss" />
     <script
       defer
@@ -40,21 +44,31 @@
     <!-- Todo: remove the below script once you finish your portfolio -->
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   </head>
-
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
+    		<!-- Dark Mode Switch -->
+		<div class="theme-switch-wrapper">
+			<!-- <span id="toggle-icon"> -->
+				<span id="toggle-text">EN-US</span>
+        <!-- <img id="flag" src="./assets/flagUK.png" alt="flag"> -->
+				<!-- <i class="fas fa-sun"></i> -->
+			<!-- </span> -->
+			<label class="theme-switch">
+				<input type="checkbox" />
+				<div class="slider round"></div>
+			</label>
+		</div>
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
+        <h1 id="hero-intro" class="hero-title load-hidden">
           Hi, my name is <span class="text-color-main">Conrado Sampaio</span>
           <br />
           I'm a Fullstack Web Developer.
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+          <a id="know-more" rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
             >Know more</a
           >
         </p>
@@ -65,7 +79,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 id="aboutTitle" class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -82,35 +96,20 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
+              <p id="firstQuote" class="about-wrapper__info-text">
                 <!-- EN-US -->
                 After graduating from Law School and finding myself unhappy with the direction my career was going, I started a web dev course on a whim and to my surprise I fell in love with it.
-                <!-- PT-BR -->
-                <!-- Após me formar em Direito em 2016 e me encontrar insatisfeito com minha carreira
-                na época, decidi em 2021 me aprofundar na programação, onde para
-                minha surpresa, acabei encontrando uma paixão. -->
               </p>
-              <p class="about-wrapper__info-text">
+              <p id="secondQuote" class="about-wrapper__info-text">
                 <!-- EN-US -->
                 Flash forward a year - plus a few more courses - and I'm building
                 full-stack projects with React, web servers on Node, databases
                 with PostgreSQL, plus a variety of other skills I've picked up
                 along the way. You can see them being put to action in my projects below!
-                <!-- PT-BR -->
-                <!-- Hoje me orgulho de dizer que construo projetos full-stack com
-                React, servidores web em Node, e banco de dados com PostgreSQL,
-                além de outras habilidades que acumulei no decorrer dessa
-                jornada. -->
                 </p>
-                <!-- <p class="about-wrapper__info-text"> -->
-                <!-- EN-US -->
-                <!-- Want to know more? Check out my resume too! -->
-                <!-- PT-BR -->
-                <!-- Estou animado pelo que o futuro me aguarda e espero continuar
-                expandindo meus conhecimentos a cada dia. -->
-                <!-- </p> -->
                 <span class="d-flex mt-3">
                   <a
+                    id="viewResume"
                     rel="noreferrer"
                     target="_blank"
                     class="cta-btn cta-btn--resume"
@@ -119,6 +118,7 @@
                     View Resume
                   </a>                  
                   <a
+                    id="viewProjects"
                     rel="noreferrer"
                     class="cta-btn cta-btn--view-project"
                     href="#projects"
@@ -138,7 +138,7 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title white-color">Projects</h2>
+          <h2 id="projectsTitle" class="section-title white-color">Projects</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
@@ -146,7 +146,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Smart Brain</h3>
                 <div>
-                  <p class="mb-4">
+                  <p id="smartBrain" class="mb-4">
                     Face recognition app with user authentication built on React
                     and Node.JS using the
                     <a target="_blank" href="https://www.clarifai.com/">Clarifai API</a>.
@@ -157,21 +157,22 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://smartbrain-v3.herokuapp.com/"
                 >
                   See Live
                 </a>
                 <a
+                
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/smartbrain"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -235,7 +236,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://smartbrain-v3.herokuapp.com/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -261,15 +262,15 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Lo-Fi Player</h3>
                 <div>
-                  <p class="mb-4">
-                    Music player built on JavaScript. Songs taken from
-                    <a target="_blank" href="https://tunetank.com/genres/lo-fi-hip-hop/">Tunetank</a>. All credit to the songs goes to the original artists.
+                  <p id="lo-fiPlayer" class="mb-4">
+                    Music player built on JavaScript with controls, time and progress bar in sync built from scratch. Songs taken from
+                    <a target="_blank" href="https://tunetank.com/genres/lo-fi-hip-hop/">Tunetank</a>.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/lofi-player/"
                 >
                   See Live
@@ -277,13 +278,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/lofi-player"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -339,7 +340,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/lofi-player/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -365,15 +366,15 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Skelly Jokester</h3>
                 <div>
-                  <p class="mb-4">
-                    An aplication that fetches programming-related jokes from the 
+                  <p id="skellyJokester" class="mb-4">
+                    An application that fetches programming-related jokes from the 
                     <a target="_blank" href="https://sv443.net/jokeapi/v2/">Joke API</a> and through the Text-to-Speech functionality from <a target="_blank" href="https://www.voicerss.org/api/">RSS API</a> it voices the joke to the user all the while displayed the same joke on screen.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/skelly-jokester/"
                 >
                   See Live
@@ -381,13 +382,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/skelly-jokester"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -443,7 +444,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/skelly-jokester/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -469,14 +470,14 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Light & Dark Mode</h3>
                 <div>
-                  <p class="mb-4">
+                  <p id="lightDark" class="mb-4">
                     Demo of Light & Dark mode implementation where the color palette is entirely changed according to what the user selects, while their preference is saved on their local storage for future reference.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/light-dark-mode/"
                 >
                   See Live
@@ -484,13 +485,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/light-dark-mode"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -546,7 +547,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/light-dark-mode/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -572,14 +573,14 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">TailwindCSS Demo</h3>
                 <div>
-                  <p class="mb-4">
+                  <p id="tailwindcss" class="mb-4">
                     A demonstration of <a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a> being used alongside the <a target="_blank" href="https://michalsnik.github.io/aos/">AOS Animation Library</a> on a <a target="_blank" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation">Creative Tim template</a> in order to guide the user's experience through the page.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/tailwind-demo/"
                 >
                   See Live
@@ -587,13 +588,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/tailwind-demo"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -663,7 +664,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/tailwind-demo/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -689,7 +690,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Infinite Drool</h3>
                 <div>
-                  <p class="mb-4">
+                  <p id="infiniteDrool" class="mb-4">
                     A demo of seamless
                     infinite scroll functionality akin to social media apps. Images are fetched from the
                     <a href="https://unsplash.com/documentation">Unsplash API</a> and we're tracking the moment they're loaded
@@ -699,7 +700,7 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/infinite-drool/"
                 >
                   See Live
@@ -707,13 +708,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/infinite-drool"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -769,7 +770,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/infinite-drool/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -795,14 +796,14 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Quote Generator</h3>
                 <div>
-                  <p class="mb-4">
+                  <p id="quoteGenerator" class="mb-4">
                     An application that fetches quotes from the <a href="https://type.fit/api/quotes">Type.fit API</a>, displays a random one, and allows the user to tweet out the quote from their personal Twitter account.                    
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
+                  class="seeLive cta-btn cta-btn--hero"
                   href="https://sampconrad.github.io/quote-generator/"
                 >
                   See Live
@@ -810,13 +811,13 @@
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
+                  class="sourceCode cta-btn text-color-main"
                   href="https://github.com/sampconrad/quote-generator"
                 >
                   Source Code
                 </a>
                 <!-- SKILLS USED -->
-                <h3 class="project-wrapper__text-title2">Built with:</h3>
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
                 <div class="grid-container">
                   <div class="grid-item">
                   <img
@@ -872,7 +873,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://sampconrad.github.io/quote-generator/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -899,10 +900,11 @@
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 id="contactTittle" class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">I'd love to hear from you!</p>
+          <p id="contactText" class="contact-wrapper__text">I'd love to hear from you!</p>
           <a
+            id="mailMe"
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
@@ -936,6 +938,7 @@
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
+        <p class="footer__text">CONRADO SAMPAIO</p>
         <hr />
 
         <p class="footer__text">
@@ -955,7 +958,6 @@
       </div>
     </footer>
     <!-- /END Footer Section -->
-
     <script defer type="module" src="index.js"></script>
   </body>
 </html>

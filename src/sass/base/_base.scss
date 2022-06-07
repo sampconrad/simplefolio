@@ -11,3 +11,88 @@ body {
   text-align: center;
   background-color: $dark-grey;
 }
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+#toggle-text {
+  position: relative;
+  // top: -4px;
+  right: -2px;
+  color: $white-color;
+  text-shadow: 1px 1px $dark-grey;
+}
+
+#flag {
+  width: 30px;
+  height: auto;
+  position: relative;
+  right: 6px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 45px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: $dark-grey;
+  bottom: 2.5px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background: $primary-color;
+}
+
+input:checked + .slider::before {
+  transform: translateX(19px);
+}
+
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
+  color: $light-grey;
+}
