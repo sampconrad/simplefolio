@@ -44,10 +44,23 @@ function languagePT() {
   document.getElementById("secondQuote").innerHTML =
     "Depois de um ano - e mais alguns cursos - estou criando projetos full-stack com React, servidores web em Node, banco de dados com PostgreSQL, e mais uma variedade de habilidades que acumulei nessa jornada. Você pode vê-las em prática nos meus projetos abaixo!";
   document.getElementById("viewResume").innerHTML = "Meu Currículo";
-  document
-    .getElementById("viewResume")
-    .setAttribute("href", "/assets/resumePtBr.pdf");
-  document.getElementById("viewProjects").innerHTML = "Projetos";
+  // RESUME
+  document.getElementById("viewResume").innerHTML = `<a                    
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--resume"
+                    href="https://drive.google.com/file/d/166wIZXCgzBa0BayBchH0K2YcyLy4n62z/view"
+                  >
+                    Meu Currículo
+                  </a>                  
+                  <a                    
+                    rel="noreferrer"
+                    class="cta-btn cta-btn--view-project"
+                    href="#projects"
+                  >
+                    Projetos
+                  </a>`;
+  // document.getElementById("viewProjects").innerHTML = "Projetos";
 
   // PROJECTS
   document.getElementById("projectsTitle").innerHTML = "Projetos";
@@ -117,10 +130,23 @@ function languageEN() {
   document.getElementById("secondQuote").innerHTML =
     "Flash forward a year - plus a few more courses - and I'm building full-stack projects with React, web servers on Node, databases with PostgreSQL, plus a variety of other skills I've picked up along the way. You can see them being put to action in my projects below!";
   document.getElementById("viewResume").innerHTML = "View Resume";
-  document
-    .getElementById("viewResume")
-    .setAttribute("href", "/assets/resume.pdf");
-  document.getElementById("viewProjects").innerHTML = "Projects";
+  // RESUME
+  document.getElementById("viewResume").innerHTML = `<a                    
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--resume"
+                    href="assets/resume.pdf"
+                  >
+                    View Resume
+                  </a>                  
+                  <a                    
+                    rel="noreferrer"
+                    class="cta-btn cta-btn--view-project"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>`;
+  // document.getElementById("viewProjects").innerHTML = "Projects";
 
   // PROJECTS
   document.getElementById("projectsTitle").innerHTML = "Projetos";
