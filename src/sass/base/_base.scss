@@ -18,8 +18,10 @@ body {
   align-items: center;
   z-index: 100;
   position: fixed;
-  right: 20px;
-  top: 20px;
+  // right: 20px;
+  // top: 20px;
+  top: 4%;
+  right: 2%;
 }
 
 .theme-switch-wrapper span {
@@ -95,4 +97,13 @@ input:checked + .slider::before {
   font-size: 30px;
   margin-right: 5px;
   color: $light-grey;
+}
+
+/* MEDIA QUERY FOR SMALLER SCREEN DEVICES */
+@media only screen and (max-width: 700px) {
+  /* Dark Mode Toggle */
+  .theme-switch-wrapper {
+    top: 6%;
+    right: 10%;
+  }
 }

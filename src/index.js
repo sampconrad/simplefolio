@@ -44,6 +44,8 @@ function languagePT() {
   document.getElementById("secondQuote").innerHTML =
     "Depois de um ano - e mais alguns cursos - estou criando projetos full-stack com React, servidores web em Node, banco de dados com PostgreSQL, e mais uma variedade de habilidades que acumulei nessa jornada. Você pode vê-las em prática nos meus projetos abaixo!";
   document.getElementById("viewResume").innerHTML = "Meu Currículo";
+  // THIS DOESN'T WORK FOR SOME UNKOWN REASON
+  // document.getElementById("viewResume").href = "assets/resumePtBr.pdf";
   document
     .getElementById("viewResume")
     .setAttribute(
@@ -69,7 +71,11 @@ function languagePT() {
 
   // STORE
   document.getElementById("store").innerHTML =
-    "Frontend para um website E-commerce usando HTML, CSS e Javascript.";
+    "Front-end para um website E-commerce usando HTML, CSS e Javascript.";
+
+  // TRAVELBNB
+  document.getElementById("travelbnb").innerHTML =
+    "Front-end para um marketplace online de alojamento turístico usando HTML, CSS e Javascript.";
 
   // SMART BRAIN
   document.getElementById(
@@ -124,6 +130,8 @@ function languageEN() {
   document.getElementById("secondQuote").innerHTML =
     "Flash forward a year - plus a few more courses - and I'm building full-stack projects with React, web servers on Node, databases with PostgreSQL, plus a variety of other skills I've picked up along the way. You can see them being put to action in my projects below!";
   document.getElementById("viewResume").innerHTML = "View Resume";
+  // THIS DOESN'T WORK FOR SOME UNKOWN REASON
+  // document.getElementById("viewResume").href = "assets/resume.pdf";
   document
     .getElementById("viewResume")
     .setAttribute("href", "/assets/resume.pdf");
@@ -147,6 +155,10 @@ function languageEN() {
   // STORE
   document.getElementById("store").innerHTML =
     "Frontend for an E-commerce Website using HTML, CSS, and JavaScript.";
+
+  // TRAVELBNB
+  document.getElementById("travelbnb").innerHTML =
+    "Front-end for an online homestay marketplace using HTML/CSS/JS.";
 
   // SMART BRAIN
   document.getElementById(
