@@ -6,7 +6,7 @@ initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const toggleIcon = document.getElementById("toggle-icon");
+// const toggleIcon = document.getElementById("toggle-icon");
 
 // Portuguese Styling
 function ptBr() {
@@ -68,6 +68,11 @@ function languagePT() {
   // BUILT WITH
   let builtWith = document.querySelectorAll(".builtWith");
   builtWith.forEach((el) => (el.innerHTML = "Criado Com:"));
+
+  // NETFLIX CLONE
+  document.getElementById(
+    "netflixclone"
+  ).innerHTML = `Demo de um clone do Netflix construído em React com toda informação da página em tempo-real retirada da <a target="_blank" href="https://www.clarifai.com/">API The Movie Database</a> e apresentada ao usuário de forma dinâmica em uma página completamente responsiva.`;
 
   // STORE
   document.getElementById("store").innerHTML =
@@ -152,9 +157,14 @@ function languageEN() {
   let builtWith = document.querySelectorAll(".builtWith");
   builtWith.forEach((el) => (el.innerHTML = "Built With:"));
 
+  // NETFLIX CLONE
+  document.getElementById(
+    "netflixclone"
+  ).innerHTML = `Demo of a Netflix clone application built on React with all real-time information fetched from <a target="_blank" href="https://www.clarifai.com/">The Movie Database API</a> and dynamically displayed to the user on a fully responsive page.`;
+
   // STORE
   document.getElementById("store").innerHTML =
-    "Frontend for an E-commerce Website using HTML, CSS, and JavaScript.";
+    "Front-end for an E-commerce Website using HTML, CSS, and JavaScript.";
 
   // TRAVELBNB
   document.getElementById("travelbnb").innerHTML =
