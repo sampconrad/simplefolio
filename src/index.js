@@ -76,11 +76,11 @@ function languagePT() {
 
   // STORE
   document.getElementById("store").innerHTML =
-    "Front-end totalmente responsivo para um website E-commerce usando HTML, CSS e Javascript.";
+    "Front-end totalmente responsivo para um website E-commerce usando HTML, CSS e JavaScript.";
 
   // TRAVELBNB
   document.getElementById("travelbnb").innerHTML =
-    "Front-end totalmente responsivo para um marketplace de alojamento turístico usando HTML, CSS e Javascript.";
+    "Front-end totalmente responsivo para um marketplace de alojamento turístico usando HTML, CSS e JavaScript.";
 
   // SMART BRAIN
   document.getElementById(
@@ -168,7 +168,7 @@ function languageEN() {
 
   // TRAVELBNB
   document.getElementById("travelbnb").innerHTML =
-    "Front-end for a fully responsive homestay marketplace website using HTML/CSS/JS.";
+    "Front-end for a fully responsive homestay marketplace website using HTML, CSS, and JavaScript.";
 
   // SMART BRAIN
   document.getElementById(
