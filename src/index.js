@@ -31,9 +31,9 @@ function languagePT() {
   // HERO
   document.getElementById(
     "hero-intro"
-  ).innerHTML = `Olá. Me chamo <span class="text-color-main">Conrado Sampaio</span>
+  ).innerHTML = `Olá. Me chamo <span class="text-color-main typed-out">Conrado Sampaio</span>
           <br />
-          Sou um Desenvolvedor Full-Stack.`;
+          Sou um Desenvolvedor Full-Stack`;
   // KNOW MORE
   document.getElementById("know-more").innerHTML = "Saiba Mais";
 
@@ -76,11 +76,11 @@ function languagePT() {
 
   // STORE
   document.getElementById("store").innerHTML =
-    "Front-end para um website E-commerce usando HTML, CSS e Javascript.";
+    "Front-end totalmente responsivo para um website E-commerce usando HTML, CSS e Javascript.";
 
   // TRAVELBNB
   document.getElementById("travelbnb").innerHTML =
-    "Front-end para um marketplace online de alojamento turístico usando HTML, CSS e Javascript.";
+    "Front-end totalmente responsivo para um marketplace de alojamento turístico usando HTML, CSS e Javascript.";
 
   // SMART BRAIN
   document.getElementById(
@@ -123,9 +123,9 @@ function languageEN() {
   // HERO
   document.getElementById(
     "hero-intro"
-  ).innerHTML = `Hi, my name is <span class="text-color-main">Conrado Sampaio</span>
+  ).innerHTML = `Hi, my name is <span class="text-color-main typed-out">Conrado Sampaio</span>
           <br />
-          I'm a Full-Stack Web Developer.`;
+          I'm a Full-Stack Web Developer`;
   // KNOW MORE
   document.getElementById("know-more").innerHTML = "Know more";
   // ABOUT SECTION
@@ -164,11 +164,11 @@ function languageEN() {
 
   // STORE
   document.getElementById("store").innerHTML =
-    "Front-end for an E-commerce Website using HTML, CSS, and JavaScript.";
+    "Front-end for a fully responsive E-commerce Website using HTML, CSS, and JavaScript.";
 
   // TRAVELBNB
   document.getElementById("travelbnb").innerHTML =
-    "Front-end for an online homestay marketplace using HTML/CSS/JS.";
+    "Front-end for a fully responsive homestay marketplace website using HTML/CSS/JS.";
 
   // SMART BRAIN
   document.getElementById(
@@ -215,12 +215,12 @@ function switchTheme(event) {
   if (event.target.checked) {
     document.documentElement.setAttribute("data-theme", "PT-BR");
     localStorage.setItem("theme", "PT-BR");
-    ptBr();
+    // ptBr();
     languagePT();
   } else {
     document.documentElement.setAttribute("data-theme", "EN-US");
     localStorage.setItem("theme", "EN-US");
-    enUs();
+    // enUs();
     languageEN();
   }
 }

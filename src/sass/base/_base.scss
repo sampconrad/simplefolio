@@ -12,6 +12,21 @@ body {
   background-color: $dark-grey;
 }
 
+// Typewriter Effect
+.typed-out {
+  border-right: 0.15em solid $secondary-color;
+  animation: blinking 0.8s infinite;
+  padding-right: 10px;
+}
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: $secondary-color;
+  }
+}
+
 /* Dark Mode Toggle */
 .theme-switch-wrapper {
   display: flex;
@@ -56,7 +71,10 @@ body {
 }
 
 .slider {
-  background: #ccc;
+  background: url(/src/assets/flagUK.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -68,6 +86,7 @@ body {
 
 .slider::before {
   background: $dark-grey;
+  opacity: 0.95;
   bottom: 2.5px;
   content: "";
   height: 20px;
@@ -78,7 +97,11 @@ body {
 }
 
 input:checked + .slider {
-  background: $primary-color;
+  // background: $primary-color;
+  background: url(/src/assets/flagBR.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
 }
 
 input:checked + .slider::before {
