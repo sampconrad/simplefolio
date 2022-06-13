@@ -74,6 +74,11 @@ function languagePT() {
     "netflixclone"
   ).innerHTML = `Demo de um clone do Netflix construído em React com toda informação da página em tempo-real retirada da <a target="_blank" href="https://www.clarifai.com/">API The Movie Database</a> e apresentada ao usuário de forma dinâmica em uma página completamente responsiva.`;
 
+  // UBER CLONE
+  document.getElementById(
+    "uber-clone"
+  ).innerHTML = `Clone do Uber em React Native usando a <a target="_blank" href="https://developers.google.com/maps/documentation/distance-matrix">Google Distance Matrix API</a> para calcular quilometragem, tempo de viagem e preço estimado, a <a target="_blank" href="https://developers.google.com/maps/documentation/places/web-service">Google Places API</a> para a funcionalidade de auto-completar texto, e <a target="_blank" href="https://developers.google.com/maps/documentation/directions">APIs Google Directions</a> & <a target="_blank" href="https://developers.google.com/maps/documentation/javascript">Google Maps JS</a> para criar um mapa interativo que traça rotas entre ponto A e B.`;
+
   // STORE
   document.getElementById("store").innerHTML =
     "Front-end totalmente responsivo para um website E-commerce usando HTML, CSS e JavaScript.";
@@ -161,6 +166,11 @@ function languageEN() {
   document.getElementById(
     "netflixclone"
   ).innerHTML = `Demo of a Netflix clone application built on React with all real-time information fetched from <a target="_blank" href="https://www.clarifai.com/">The Movie Database API</a> and dynamically displayed to the user on a fully responsive page.`;
+
+  // UBER CLONE
+  document.getElementById(
+    "uber-clone"
+  ).innerHTML = `Uber Clone built on React Native using the <a target="_blank" href="https://developers.google.com/maps/documentation/distance-matrix">Google Distance Matrix API</a> to calculate mileage, travel time, and estimated price, the <a target="_blank" href="https://developers.google.com/maps/documentation/places/web-service">Google Places API</a> for the auto-complete functionality, and <a target="_blank" href="https://developers.google.com/maps/documentation/directions">Google's Directions</a> & <a target="_blank" href="https://developers.google.com/maps/documentation/javascript">Maps JS APIs</a> to get an interactive map that traces a route from point A to B.`;
 
   // STORE
   document.getElementById("store").innerHTML =

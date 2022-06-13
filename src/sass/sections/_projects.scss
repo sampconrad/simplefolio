@@ -100,58 +100,62 @@
   //   justify-content: center;
   // }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    @include respond(phone) {
-      grid-template-columns: auto auto auto auto;
-    }
-    justify-content: center;
+  .skill-container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    // padding: 10px;
-    // margin: 10px;
+    justify-content: center;
+    margin-left: 10px;
+    @include respond(phone) {
+      width: 90vw;
+      margin: 0;
+    }
   }
-  .grid-item {
-    justify-self: center;
+  .skill-container i {
+    font-size: 50px;
+    @include respond(phone) {
+      font-size: 40px;
+    }
   }
-  .projectSkill {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    width: auto;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
+  .skill-child {
+    flex: 1 0 15%; /* explanation below */
+    padding: 5px;
+    line-height: 45px;
+    margin: 5px;
+    height: 60px;
+    // background-color: blue;
+    text-align: center;
     transition: all 0.2s ease-in;
     &:hover {
       transform: translateY(-2px);
     }
     @include respond(phone) {
-      height: 5rem;
-      margin: 1rem 2rem 1rem 2rem;
-    }
-  }
-
-  .skill-small {
-    @extend .projectSkill;
-    height: 40px;
-    @include respond(phone) {
-      height: 30px;
-    }
-  }
-
-  .skill-medium {
-    @extend .projectSkill;
-    height: 60px;
-    @include respond(phone) {
+      line-height: 40px;
       height: 50px;
+      // margin-bottom: 10px;
     }
   }
-
-  .skill-large {
-    @extend .projectSkill;
-    height: 80px;
+  .google {
+    transform: translateY(-5px);
+    width: 60px;
+    height: auto;
     @include respond(phone) {
-      height: 4rem;
+      width: 50px;
+    }
+  }
+  .rest {
+    width: 90px;
+    height: auto;
+    @include respond(phone) {
+      width: 80px;
+    }
+  }
+  .aos {
+    width: 70px;
+    height: auto;
+    @include respond(phone) {
+      width: 50px;
     }
   }
 }

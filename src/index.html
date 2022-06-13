@@ -40,6 +40,9 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+    <!-- DEVICON ICONS -->    
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
@@ -169,63 +172,16 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/heroku.png"
-                    alt="heroku"
-                    class="projectSkill"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-react-original colored"></i></div>
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i> </div>
+                  <div class="skill-child"><img
+                      class="rest"
+                      src="./assets/rest.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
 
               </div>
@@ -256,6 +212,71 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Uber Clone</h3>
+                <div>
+                  <p id="uber-clone" class="mb-4">                    
+                    Uber Clone built on React Native using the <a target="_blank" href="https://developers.google.com/maps/documentation/distance-matrix">Google Distance Matrix API</a> to calculate mileage, travel time, and estimated price, the <a target="_blank" href="https://developers.google.com/maps/documentation/places/web-service">Google Places API</a> for the auto-complete functionality, and <a target="_blank" href="https://developers.google.com/maps/documentation/directions">Google's Directions</a> & <a target="_blank" href="https://developers.google.com/maps/documentation/javascript">Maps JS APIs</a> to get an interactive map that traces a route from point A to B.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="seeLive cta-btn cta-btn--hero"
+                  href="https://expo.dev/@sampconrad/uber-clone"
+                >
+                  See Live
+                </a>
+                <a
+                
+                  rel="noreferrer"
+                  target="_blank"
+                  class="sourceCode cta-btn text-color-main"
+                  href="https://github.com/sampconrad/uber-clone"
+                >
+                  Source Code
+                </a>
+                <!-- SKILLS USED -->
+                <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-react-original colored"></i></div>
+                  <div class="skill-child"><i class="devicon-redux-original colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-tailwindcss-plain colored"></i></div>
+                  <div class="skill-child"><img
+                      class="google"
+                      src="./assets/google.png"
+                    /></div>
+                  </div>
+                <!-- END OF SKILLS USED -->
+
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://expo.dev/@sampconrad/uber-clone" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/uber-clone.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->          
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Store</h3>
                 <div>
                   <p id="store" class="mb-4">
@@ -281,63 +302,11 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/heroku.png"
-                    alt="heroku"
-                    class="projectSkill"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
 
               </div>
@@ -393,63 +362,11 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/heroku.png"
-                    alt="heroku"
-                    class="projectSkill"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
 
               </div>
@@ -509,63 +426,19 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/heroku.png"
-                    alt="heroku"
-                    class="projectSkill"
-                  /></div>
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-react-original colored"></i></div>
+                  <div class="skill-child"><i class="devicon-nodejs-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-postgresql-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-heroku-original colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i> </div>
+                  <div class="skill-child"><img
+                    class="rest"
+                      src="./assets/rest.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
 
               </div>
@@ -621,56 +494,11 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
@@ -725,56 +553,15 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div>
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                    <div class="skill-child"><img
+                      class="rest"
+                      src="./assets/rest.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
@@ -828,56 +615,11 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
@@ -931,70 +673,15 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/tailwindcss.png" 
-                  alt="tailwindcss" 
-                  class="projectSkill skill-small" 
-                  /></div>
-                  
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/aos.png" 
-                  alt="aos" 
-                  class="projectSkill" 
-                  /></div>                  
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div> -->
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-tailwindcss-plain colored"></i></div>
+                   <div class="skill-child"><img
+                    class="aos"
+                      src="./assets/aos.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
@@ -1051,56 +738,15 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div>
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                      <div class="skill-child"><img
+                        class="rest"
+                      src="./assets/rest.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
@@ -1154,56 +800,15 @@
                 </a>
                 <!-- SKILLS USED -->
                 <h3 class="builtWith project-wrapper__text-title2">Built with:</h3>
-                <div class="grid-container">
-                  <div class="grid-item">
-                  <img
-                    src="./assets/html.png"
-                    alt="html"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img 
-                  src="./assets/css.png" 
-                  alt="css" 
-                  class="projectSkill" 
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/js.png"
-                    alt="js"
-                    class="projectSkill"
-                  /></div>
-
-                  <!-- <div class="grid-item">
-                  <img
-                    src="./assets/react.png"
-                    alt="react"
-                    class="projectSkill"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/postgre.png"
-                    alt="postgre"
-                    class="projectSkill skill-medium"
-                  /></div>
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/node3.jpg"
-                    alt="node"
-                    class="projectSkill skill-small"
-                  /></div> -->
-
-                  <div class="grid-item">
-                  <img
-                    src="./assets/rest.png"
-                    alt="rest"
-                    class="projectSkill skill-small"
-                  /></div>
-                </div>
+                <div class="skill-container">
+                  <div class="skill-child"><i class="devicon-javascript-plain colored"></i></div>
+                  <div class="skill-child"><i class="devicon-html5-plain colored"></i> </div>
+                  <div class="skill-child"><i class="devicon-css3-plain colored"></i></div>
+                      <div class="skill-child"><img
+                        class="rest"
+                      src="./assets/rest.png"
+                    /></div>
+                  </div>
                 <!-- END OF SKILLS USED -->
               </div>
             </div>
