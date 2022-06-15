@@ -42,7 +42,7 @@ function languagePT() {
   document.getElementById("firstQuote").innerHTML =
     "Após me encontrar insatisfeito com minha trajetória de carreira, ingressei em 2021 em um curso para iniciantes na programação, onde para minha surpresa, acabei me apaixonando.";
   document.getElementById("secondQuote").innerHTML =
-    "Depois de um ano - e mais alguns cursos - estou criando projetos full-stack com React, servidores web em Node, banco de dados com PostgreSQL, e mais uma variedade de habilidades que acumulei nessa jornada. Você pode vê-las em prática nos meus projetos abaixo!";
+    "Depois de um ano - e mais alguns cursos - estou criando projetos full-stack com o leque de habilidades que acumilei durante essa jornada. Você pode vê-las em prática nos meus projetos abaixo!";
   document.getElementById("viewResume").innerHTML = "Meu Currículo";
   // THIS DOESN'T WORK FOR SOME UNKOWN REASON
   // document.getElementById("viewResume").href = "assets/resumePtBr.pdf";
@@ -50,7 +50,7 @@ function languagePT() {
     .getElementById("viewResume")
     .setAttribute(
       "href",
-      "https://drive.google.com/file/d/166wIZXCgzBa0BayBchH0K2YcyLy4n62z/view"
+      "https://drive.google.com/file/d/1nXCIZigpiXCAeO1h_s0zZl7gbyg9C9-r/view"
     );
   document.getElementById("viewProjects").innerHTML = "Projetos";
 
@@ -138,7 +138,7 @@ function languageEN() {
   document.getElementById("firstQuote").innerHTML =
     "After graduating from Law School and finding myself unhappy with the direction my career was going, I started a web dev course on a whim and to my surprise I fell in love with it.";
   document.getElementById("secondQuote").innerHTML =
-    "Flash forward a year - plus a few more courses - and I'm building full-stack projects with React, web servers on Node, databases with PostgreSQL, plus a variety of other skills I've picked up along the way. You can see them being put to action in my projects below!";
+    "Flash forward a year - plus a few more courses - and I'm building full-stack projects with a variety of skills I've picked up along the way. You can see them being put to action in my projects below!";
   document.getElementById("viewResume").innerHTML = "View Resume";
   // THIS DOESN'T WORK FOR SOME UNKOWN REASON
   // document.getElementById("viewResume").href = "assets/resume.pdf";
