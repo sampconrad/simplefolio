@@ -194,7 +194,7 @@ function languageEN() {
   document.getElementById(
     "skellyJokester"
   ).innerHTML = `An application that fetches programming-related jokes from the 
-                    <a target="_blank" href="https://sv443.net/jokeapi/v2/">Joke API</a> and through the Text-to-Speech functionality from <a target="_blank" href="https://www.voicerss.org/api/">RSS API</a> it voices the joke to the user all the while displayed the same joke on screen.`;
+                    <a target="_blank" href="https://sv443.net/jokeapi/v2/">Joke API</a> and through the Text-to-Speech functionality from <a target="_blank" href="https://www.voicerss.org/api/">RSS API</a> it voices the joke to the user all while displaying the same joke on screen.`;
   // LIGHT & DARK
   document.getElementById(
     "lightDark"
