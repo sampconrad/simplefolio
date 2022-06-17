@@ -40,9 +40,9 @@ function languagePT() {
   // ABOUT SECTION
   document.getElementById("aboutTitle").innerHTML = "Sobre mim";
   document.getElementById("firstQuote").innerHTML =
-    "Após me encontrar insatisfeito com minha trajetória de carreira, ingressei em 2021 em um curso para iniciantes na programação, onde para minha surpresa, acabei me apaixonando.";
+    "Após me encontrar insatisfeito com minha carreira pós-graduação, ingressei em um curso de Web Dev e me apaixonei. Nessa jornada, construí uma sólida fundação em ferramentas de desenvolvimento de front e back-end, mas foi com o primeiro que me identifiquei mais.";
   document.getElementById("secondQuote").innerHTML =
-    "Depois de um ano - e mais alguns cursos - estou criando projetos full-stack com o leque de habilidades que acumilei durante essa jornada. Você pode vê-las em prática nos meus projetos abaixo!";
+    "Com ênfase em design limpo e responsivo e experiências de usuário fluidas, estou construindo projetos full-stack com um leque de habilidades que acumulei ao longo do tempo. Você pode conferir alguns desses projetos, assim como seus códigos-fonte, logo abaixo.";
   document.getElementById("viewResume").innerHTML = "Meu Currículo";
   // THIS DOESN'T WORK FOR SOME UNKOWN REASON
   // document.getElementById("viewResume").href = "assets/resumePtBr.pdf";
@@ -50,7 +50,7 @@ function languagePT() {
     .getElementById("viewResume")
     .setAttribute(
       "href",
-      "https://drive.google.com/file/d/1nXCIZigpiXCAeO1h_s0zZl7gbyg9C9-r/view"
+      "https://drive.google.com/file/d/1nenbNcWK2jPQWOtcAT2GkP12tDxPxN7y/view?usp=sharing"
     );
   document.getElementById("viewProjects").innerHTML = "Projetos";
 
@@ -136,9 +136,9 @@ function languageEN() {
   // ABOUT SECTION
   document.getElementById("aboutTitle").innerHTML = "About me";
   document.getElementById("firstQuote").innerHTML =
-    "After graduating from Law School and finding myself unhappy with the direction my career was going, I started a web dev course on a whim and to my surprise I fell in love with it.";
+    "After being unhappy with my career post college, I started a web dev course on a whim and fell in love with it. Through this journey I acquired a solid understanding of Front and Back-end development tools, but it is the former that I identified with the most.";
   document.getElementById("secondQuote").innerHTML =
-    "Flash forward a year - plus a few more courses - and I'm building full-stack projects with a variety of skills I've picked up along the way. You can see them being put to action in my projects below!";
+    "With a strong focus on clean responsive design and fluid user experiences, I'm building Full-stack projects with a variety of skills I've picked up along the way. You can see some of these projects, as well as their source code, down below.";
   document.getElementById("viewResume").innerHTML = "View Resume";
   // THIS DOESN'T WORK FOR SOME UNKOWN REASON
   // document.getElementById("viewResume").href = "assets/resume.pdf";
